@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    cardView:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/el_escarador"
+            android:layout_gravity="center_horizontal"
+            />
+
+     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+         <ImageView
+             android:id="@+id/imgIconoLike"
+             android:layout_width="29dp"
+             android:layout_height="29dp"
+             android:layout_gravity="center"
+             android:src="@drawable/hueso_nosilueta"
+             android:scaleType="centerCrop"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"/>
+
+         <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            -->
+            <TextView
+                android:id="@+id/tvNombreMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nombre"
+                android:textSize="17sp"
+                android:paddingLeft="40dp"
+                android:paddingTop="7dp"
+                android:textColor="@color/colorSecundaryText"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/tvNoLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorSecundaryText"
+                android:textSize="17sp"
+                android:paddingRight="50dp"
+                android:paddingTop="7dp"
+                android:layout_alignParentRight="true"
+                />
+
+        <!--
+        </LinearLayout>
+        -->
+            <ImageView
+                android:id="@+id/imgIconoNoLike"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/hueso_silueta"
+                android:layout_gravity="center"
+                android:paddingRight="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
